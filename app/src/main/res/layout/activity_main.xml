@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<EditText
+    android:id="@+id/Mainacticity_username"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:hint="请输入账户"/>
+<EditText
+    android:id="@+id/Mainacticity_userpwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:hint="请输入密码"
+    android:layout_below="@id/Mainacticity_username"/>
+<Button
+    android:id="@+id/Mainacticity_save"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="保存"
+    android:layout_below="@id/Mainacticity_userpwd"
+    android:layout_marginTop="20dp"
+    android:layout_alignLeft="@id/Mainacticity_userpwd"/>
+
+    <Button
+        android:id="@+id/Mainacticity_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Mainacticity_userpwd"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="22dp"
+        android:layout_toRightOf="@id/Mainacticity_save"
+        android:text="删除"
+        android:textSize="20dp" />
+
+    <Button
+    android:id="@+id/Mainacticity_read"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="读取"
+    android:layout_below="@id/Mainacticity_userpwd"
+    android:layout_marginTop="20dp"
+    android:layout_toRightOf="@id/Mainacticity_delete"
+    android:layout_alignRight="@id/Mainacticity_userpwd"
+    android:layout_marginLeft="50dp"/>
+
+<TextView
+    android:id="@+id/Mainacticity_readUsername"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="0dp"
+    android:text="未读取用户名"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:layout_below="@id/Mainacticity_save"
+    android:layout_marginTop="20dp"/>
+
+<TextView
+    android:id="@+id/Mainacticity_readPwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="未读取密码"
+    android:gravity="center"
+    android:layout_below="@id/Mainacticity_readUsername" />
+
+
+
+</RelativeLayout>
